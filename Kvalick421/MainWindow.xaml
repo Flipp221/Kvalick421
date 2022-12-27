@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kvalick421"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Авториизация" Height="450" Width="450" Background="Crimson">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="160,90,0,0" TextWrapping="Wrap" FontSize="18" TextAlignment="Center" VerticalAlignment="Top" Foreground="#C5C6C7" Height="29" Width="163"><Run Text="Введите логин"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="tbLogin" MaxLength="6" HorizontalAlignment="Left" Height="29" Margin="160,124,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" Width="163" Background="#C5C6C7" FontSize="18" BorderBrush="#66FCF1" Foreground="Black" FontFamily="Comic Sans MS" Cursor="Arrow"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,158,0,0" TextAlignment="Center" TextWrapping="Wrap" FontSize="18" VerticalAlignment="Top" Foreground="#C5C6C7" Width="163" Height="30"><Run Text="Введите "/><Run Text="пароль"/></TextBlock>
+        <PasswordBox x:Name="tbPassword" MaxLength="4" HorizontalAlignment="Left" Height="30" Margin="160,188,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="163" Background="#C5C6C7" FontSize="18" BorderBrush="#66FCF1" Foreground="Black" FontFamily="Comic Sans MS"/>
+        <Button x:Name="btnAuth" Content="Авторизироваться" Height="34" FontSize="20" Width="216" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Aquamarine" Click="btnAuth_Click" Margin="134,239,0,0"/>
     </Grid>
 </Window>
